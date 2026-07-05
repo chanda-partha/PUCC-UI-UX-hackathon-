@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Hub | Premier University Computer Club</title>
+  <meta name="description" content="Check upcoming programming contests, technology bootcamps, Linux workshops, and AI seminars at Premier University Computer Club (PUCC) Chittagong.">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       STICKY GLASS NAVBAR
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-custom" href="index.html">
+        <div class="floating-logos">
+          <div class="logo-container" title="Premier University Logo">
+            <img src="/assets/PUC-PNG.png" alt="Premier University Logo" width="40" height="40">
+          </div>
+          <div class="logo-container" title="PUCC Logo">
+            <img src="/assets/puc_computer_club_logo_color.png" alt="PUCC Logo" width="60" height="20">
+          </div>
+        </div>
+        <div class="d-none d-sm-block text-start">
+          <span style="font-weight: 700; letter-spacing: -0.03em; display: block; line-height: 1;">PUCC</span>
+          <span style="font-size: 0.75rem; display: block; font-weight: 500; opacity: 0.7; margin-top: 2px;">Premier University</span>
+        </div>
+      </a>
+      <button class="navbar-toggler-custom collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#puccNavbar" aria-controls="puccNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="puccNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="wings.html">Wings</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="join.html">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+              <!-- Dynamically populated -->
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO HEADER
+       ========================================== -->
+  <header class="section-padding text-center position-relative" style="margin-top: 80px; background: var(--hero-gradient);">
+    <div class="tech-grid-bg"></div>
+    <div class="container position-relative" style="z-index: 10;">
+      <span class="motto-banner">EVENTS PLATFORM</span>
+      <h1 class="display-4 font-weight-800 mb-3 text-gradient">Club Events & Technology Sprints</h1>
+      <p class="lead text-secondary max-width-600 mx-auto">Explore upcoming challenges and trace our completed archives of technological workshops.</p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       FILTER INTERFACE SECTION
+       ========================================== -->
+  <section class="py-4" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <button class="event-filter-btn btn btn-primary-custom active" data-filter="all">All Events</button>
+        <button class="event-filter-btn btn btn-secondary-custom" data-filter="competition">Competitions</button>
+        <button class="event-filter-btn btn btn-secondary-custom" data-filter="workshop">Workshops</button>
+        <button class="event-filter-btn btn btn-secondary-custom" data-filter="bootcamp">Bootcamps</button>
+        <button class="event-filter-btn btn btn-secondary-custom" data-filter="seminar">Seminars</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EVENTS GRID SECTION
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--bg-primary);">
+    <div class="container">
+      
+      <!-- Upcoming Events Header -->
+      <h2 class="h3 mb-4 text-start font-weight-700" style="position: relative; display: inline-block;">
+        Upcoming Sprints
+        <span style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: var(--club-cyan);"></span>
+      </h2>
+      
+      <div class="row g-4 mb-5">
+        <!-- Event 1 (Upcoming Competition) -->
+        <div class="col-md-6 col-lg-4 event-item-col" data-type="competition">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge upcoming">Upcoming</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <circle cx="200" cy="100" r="60" stroke="#00BCD4" stroke-width="2" stroke-dasharray="10 5"/>
+                <path d="M170 100L190 120L230 80" stroke="#00BCD4" stroke-width="4" stroke-linecap="round"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">PUCC Intra Code Battle 2026</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 July 15, 2026</span>
+                <span>📍 CSE Lab 4</span>
+              </div>
+              <h3 class="event-title">PUCC Intra Code Battle 2026</h3>
+              <p class="small text-secondary flex-grow-1">Prepare yourself for the annual speed coding and algorithmic optimization showdown. Show your programming skills and claim the champion badge.</p>
+              <button class="btn-primary-custom btn-sm mt-3" onclick="alert('Registration complete! Check your email for further instructions.')">Register Seat</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 2 (Upcoming Bootcamp) -->
+        <div class="col-md-6 col-lg-4 event-item-col" data-type="bootcamp">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge upcoming">Upcoming</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <rect x="120" y="50" width="160" height="100" rx="10" stroke="#0EA5A4" stroke-width="2"/>
+                <path d="M140 80H260M140 100H220M140 120H200" stroke="#0EA5A4" stroke-width="4" stroke-linecap="round"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">AI and Deep Learning Bootcamp</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 August 02, 2026</span>
+                <span>📍 Seminar Library</span>
+              </div>
+              <h3 class="event-title">AI and Deep Learning Bootcamp</h3>
+              <p class="small text-secondary flex-grow-1">An intensive hands-on bootcamp focusing on convolutional neural networks and natural language models. Prior Python coding needed.</p>
+              <button class="btn-primary-custom btn-sm mt-3" onclick="alert('Registration complete! Check your email for further instructions.')">Register Seat</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Previous Events Header -->
+      <h2 class="h3 mb-4 text-start font-weight-700 mt-5" style="position: relative; display: inline-block;">
+        Completed Events Archive
+        <span style="position: absolute; bottom: -5px; left: 0; width: 30px; height: 2px; background: var(--warm-coral);"></span>
+      </h2>
+      
+      <div class="row g-4">
+        <!-- Event 3 (Previous Workshop) -->
+        <div class="col-md-6 col-lg-4 event-item-col" data-type="workshop">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge">Archived</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <circle cx="150" cy="100" r="30" stroke="#FF8B6A" stroke-width="2"/>
+                <circle cx="250" cy="100" r="30" stroke="#00BCD4" stroke-width="2"/>
+                <line x1="180" y1="100" x2="220" y2="100" stroke="#E2E8F0" stroke-width="2"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">Linux System Administration Session</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 June 12, 2026</span>
+                <span>📍 Server Hub Lab</span>
+              </div>
+              <h3 class="event-title">Linux System Administration Session</h3>
+              <p class="small text-secondary flex-grow-1">Practical workshop about operating system processes, network routing tables, and security scripts in Red Hat Linux.</p>
+              <button class="btn-secondary-custom btn-sm mt-3" disabled>Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 4 (Previous Seminar) -->
+        <div class="col-md-6 col-lg-4 event-item-col" data-type="seminar">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge">Archived</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <polygon points="200,40 250,150 150,150" stroke="#00BCD4" stroke-width="2" fill="none"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">Emerging Tech & Web3 Infra</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 May 20, 2026</span>
+                <span>📍 Main Auditorium</span>
+              </div>
+              <h3 class="event-title">Emerging Tech & Web3 Infra</h3>
+              <p class="small text-secondary flex-grow-1">Distinguished speaker session discussing distributed computing protocols, decentralized databases, and smart networks scaling.</p>
+              <button class="btn-secondary-custom btn-sm mt-3" disabled>Completed</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 5 (Previous Competition) -->
+        <div class="col-md-6 col-lg-4 event-item-col" data-type="competition">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge">Archived</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <path d="M120 70H280V100H120V70Z" stroke="#FF8B6A" stroke-width="2" fill="none"/>
+                <path d="M150 100V130M250 100V130M170 130H230" stroke="#FF8B6A" stroke-width="2"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">PUCC Inter-University Mock</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 April 05, 2026</span>
+                <span>📍 Virtual Judge Platform</span>
+              </div>
+              <h3 class="event-title">PUCC Inter-University Mock</h3>
+              <p class="small text-secondary flex-grow-1">A massive online training match bringing together over 300 programmers across 20 institutions in Bangladesh.</p>
+              <button class="btn-secondary-custom btn-sm mt-3" disabled>Completed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 text-start">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-container" style="background: none; border: none; padding: 0; width: 36px; height: 36px;">
+              <img src="/assets/PUC-PNG.png" alt="Premier University Logo" width="40" height="40">
+            </div>
+            <div class="logo-container" style="background: none; border: none; padding: 0; width: 36px; height: 36px;">
+              <img src="/assets/puc_computer_club_logo_color.png" alt="PUCC Logo" width="60" height="20">
+            </div>
+            <h4 class="h5 mb-0" style="font-weight: 700;">PUCC</h4>
+          </div>
+          <p class="small text-muted mb-3">Challenging boundaries, reaching new heights.</p>
+          <p class="small text-muted">The official engineering and research computer community of Premier University, Chittagong, Bangladesh.</p>
+        </div>
+        <div class="col-6 col-lg-2 text-start ms-lg-auto">
+          <h5 class="h6 mb-3 font-monospace" style="letter-spacing: 0.05em; font-weight: 700;">NAVIGATE</h5>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="wings.html" class="footer-link">Wings</a>
+          <a href="events.html" class="footer-link">Events</a>
+        </div>
+        <div class="col-6 col-lg-2 text-start">
+          <h5 class="h6 mb-3 font-monospace" style="letter-spacing: 0.05em; font-weight: 700;">INFO</h5>
+          <a href="team.html" class="footer-link">Our Team</a>
+          <a href="join.html" class="footer-link">Join Us</a>
+          <a href="achievements.html" class="footer-link">Achievements</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="col-lg-3 text-start">
+          <h5 class="h6 mb-3 font-monospace" style="letter-spacing: 0.05em; font-weight: 700;">CONNECT</h5>
+          <p class="small text-muted mb-2">📍 CSE Department, Premier University, Chittagong, Bangladesh</p>
+          <p class="small text-muted mb-3">📧 contact@pucc.premier.edu</p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 opacity-10">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start small text-muted">
+          &copy; 2026 Premier University Computer Club. All Rights Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small text-muted mt-2 mt-md-0">
+          Built with 💻 by PUCC Dev Wing
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

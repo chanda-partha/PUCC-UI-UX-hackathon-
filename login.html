@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PUCC | Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand-custom" href="index.html">
+
+                <div class="floating-logos">
+
+                    <div class="logo-container">
+                        <img src="assets/PUC-PNG.png" alt="Premier University" width="40">
+                    </div>
+
+                    <div class="logo-container">
+                        <img src="assets/puc_computer_club_logo_color.png" alt="PUCC" width="60">
+                    </div>
+
+                </div>
+
+                <div class="d-none d-sm-block text-start">
+                    <span style="font-weight:600;">PUCC</span>
+                    <span style="font-size:.75rem;display:block;">
+                        Premier University
+                    </span>
+                </div>
+
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- ========================= LOGIN ========================= -->
+
+    <section class="hero-wrapper">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-5 col-md-8">
+
+                    <div class="glass-panel p-5">
+
+                        <div class="text-center mb-4">
+
+                            <img src="assets/puc_computer_club_logo_color.png" width="90" class="mb-3">
+
+                            <h2>Welcome Back</h2>
+
+                            <p class="text-secondary">
+
+                                Login using your registered account.
+
+                            </p>
+
+                        </div>
+
+                        <form id="loginForm">
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Email Address
+
+                                </label>
+
+                                <input type="email" id="email" class="form-control" placeholder="username@premier.edu"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Password
+
+                                </label>
+
+                                <input type="password" id="password" class="form-control" placeholder="********"
+                                    required>
+
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="checkbox" id="remember">
+
+                                    <label class="form-check-label" for="remember">
+
+                                        Remember Me
+
+                                    </label>
+
+                                </div>
+
+                                <a href="#" id="forgotPassword">
+
+                                    Forgot Password?
+
+                                </a>
+
+                            </div>
+
+                            <button type="submit" class="btn-primary-custom w-100">
+
+                                Login
+
+                            </button>
+
+                        </form>
+
+                        <hr class="my-4">
+
+                        <div class="text-center">
+
+                            <p class="mb-2">
+
+                                Don't have an account?
+
+                            </p>
+
+                            <a href="signup.html" class="btn-secondary-custom w-100">
+
+                                Create Account
+
+                            </a>
+
+                        </div>
+
+                        <div class="text-center mt-4">
+
+                            <a href="index.html">
+
+                                ← Back to Home
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Theme/Navbar -->
+
+    <script src="js/app.js"></script>
+
+    <!-- Firebase Login -->
+
+    <script type="module" src="js/login.js"></script>
+
+</body>
+
+</html>

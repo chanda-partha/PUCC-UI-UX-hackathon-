@@ -1,0 +1,238 @@
+/* ==========================
+   LOGIN PAGE
+========================== */
+
+body {
+    background: var(--bg-primary);
+}
+
+/* Hero Section */
+
+.hero-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 120px 20px 60px;
+
+}
+
+/* Login Card */
+
+.glass-panel {
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(18px);
+
+    background: rgba(255, 255, 255, .06);
+
+    border: 1px solid rgba(255, 255, 255, .1);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .35);
+
+}
+
+/* Logo */
+
+.glass-panel img {
+
+    max-width: 100px;
+
+}
+
+/* Heading */
+
+.glass-panel h2 {
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+/* Paragraph */
+
+.glass-panel p {
+
+    color: var(--text-secondary);
+
+}
+
+/* Labels */
+
+.form-label {
+
+    font-weight: 500;
+
+}
+
+/* Inputs */
+
+.form-control {
+
+    background: rgba(255, 255, 255, .08);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    color: var(--text-primary);
+
+    border-radius: 12px;
+
+    padding: 14px;
+
+    transition: .3s;
+
+}
+
+.form-control:focus {
+
+    background: rgba(255, 255, 255, .1);
+
+    border-color: #00BCD4;
+
+    box-shadow: 0 0 0 .2rem rgba(0, 188, 212, .15);
+
+    color: var(--text-primary);
+
+}
+
+.form-control::placeholder {
+
+    color: #9ca3af;
+
+}
+
+/* Remember */
+
+.form-check-label {
+
+    color: var(--text-secondary);
+
+}
+
+/* Forgot Password */
+
+#forgotPassword {
+
+    text-decoration: none;
+
+    color: #00BCD4;
+
+    transition: .3s;
+
+}
+
+#forgotPassword:hover {
+
+    color: #3dd5f3;
+
+}
+
+/* Login Button */
+
+.btn-primary-custom {
+
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    border-radius: 12px;
+
+    transition: .3s;
+
+}
+
+.btn-primary-custom:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* Divider */
+
+hr {
+
+    border-color: rgba(255, 255, 255, .08);
+
+}
+
+/* Bottom Text */
+
+.text-center p {
+
+    margin-bottom: 15px;
+
+}
+
+/* Secondary Button */
+
+.btn-secondary-custom {
+
+    width: 100%;
+
+    border-radius: 12px;
+
+}
+
+/* Animation */
+
+.glass-panel {
+
+    animation: fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .hero-wrapper {
+
+        padding-top: 100px;
+
+    }
+
+    .glass-panel {
+
+        padding: 30px !important;
+
+    }
+
+    .glass-panel h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+}

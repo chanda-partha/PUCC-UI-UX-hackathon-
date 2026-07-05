@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier University Computer Club | PUCC Chittagong</title>
+  <meta name="description" content="Official website of Premier University Computer Club (PUCC). Challenging boundaries, reaching new heights in software engineering, competitive programming, deep neural research, IoT, and IT networking.">
+  <meta name="keywords" content="PUCC, Premier University, Computer Club, Chittagong, Computer Science, Coding Club, Programming contests">
+  <meta name="author" content="PUCC Tech Team">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand-custom" href="index.html">
+        <div class="floating-logos">
+          <div class="logo-container" title="Premier University Logo">
+          <img src="/assets/PUC-PNG.png" alt="Premier University Logo" width="40" height="40">
+      
+          </div>
+          <div class="logo-container" title="PUCC Logo">
+            <img src="/assets/puc_computer_club_logo_color.png" alt="PUCC Logo" width="60" height="20">
+          </div>
+        </div>
+        <div class="d-none d-sm-block text-start">
+          <span style="font-weight: 600; letter-spacing: -0.03em; display: block; line-height: 1;">PUCC</span>
+          <span style="font-size: 0.75rem; display: block; font-weight: 400; opacity: 0.7; margin-top: 2px;">Premier University</span>
+        </div>
+      </a>
+      <button class="navbar-toggler-custom collapsed d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#puccNavbar" aria-controls="puccNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="puccNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="wings.html">Wings</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="join.html">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <button class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+              <!-- Dynamically populated -->
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-wrapper">
+    <div class="tech-grid-bg"></div>
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="container hero-content text-center text-lg-start">
+      <div class="row align-items-center py-5">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="fade-up-init fade-up-active">
+            <div class="motto-banner">Challenging boundaries, reaching new heights.</div>
+            <h1 class="hero-title text-gradient">Empowering students to innovate, compete, research, and lead the future of technology.</h1>
+            <p class="lead text-secondary mb-4 col-xl-10">Welcome to Premier University Computer Club (PUCC). We bridge academic theories with cutting-edge industry practices to prepare students for real-world impact.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+              <a href="join.html" class="btn-primary-custom">Join PUCC</a>
+              <a href="wings.html" class="btn-secondary-custom">Explore Wings</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center fade-up-init fade-up-active d-none d-lg-block">
+          <!-- Premium Floating Graphic -->
+          <div class="position-relative d-inline-block">
+            <div class="glass-panel" style="padding: 3rem; width: 380px; border-radius: var(--border-radius-lg); box-shadow: 0 30px 60px rgba(0,0,0,0.15); border-color: rgba(0, 188, 212, 0.25);">
+              <svg width="80" height="80" viewBox="0 0 100 100" fill="none" class="mb-4" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" stroke="url(#hero-icon-grad)" stroke-width="3" stroke-dasharray="8 4"/>
+                <path d="M35 50L45 60L65 40" stroke="#00BCD4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="hero-icon-grad" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00BCD4"/>
+                    <stop offset="1" stop-color="#FF8B6A"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <h3 class="h4 mb-2">Technological Ecosystem</h3>
+              <p class="small text-muted mb-4">A community of builders, research minds, and computer scientists pushing boundaries.</p>
+              <div class="d-flex justify-content-center gap-3">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+            </div>
+            <!-- Decorative floats -->
+            <div class="position-absolute" style="top: -20px; right: -20px; width: 60px; height: 60px; animation: float-slow 4s ease-in-out infinite;">
+              <div class="glass-panel d-flex align-items-center justify-content-center" style="width: 100%; height: 100%; border-radius: 50%; border-color: var(--club-cyan);">
+                💻
+              </div>
+            </div>
+            <div class="position-absolute" style="bottom: -20px; left: -20px; width: 60px; height: 60px; animation: float-slow 5s ease-in-out infinite 1s;">
+              <div class="glass-panel d-flex align-items-center justify-content-center" style="width: 100%; height: 100%; border-radius: 50%; border-color: var(--warm-coral);">
+                🚀
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-secondary-custom" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3 fade-up-init">
+          <div class="glass-panel-glow p-4 text-center h-100">
+            <h3 class="h2 text-gradient mb-2" style="font-weight: 800;">2015</h3>
+            <h4 class="h6 mb-2">Founded</h4>
+            <p class="small text-muted mb-0">Started as an student-driven tech initiative inside the CS department.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-up-init">
+          <div class="glass-panel-glow p-4 text-center h-100">
+            <h3 class="h2 text-gradient mb-2" style="font-weight: 800;">2020</h3>
+            <h4 class="h6 mb-2">Approved</h4>
+            <p class="small text-muted mb-0">Officially recognized by university authority as the premier computer club.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-up-init">
+          <div class="glass-panel-glow p-4 text-center h-100">
+            <h3 class="h2 text-gradient mb-2" style="font-weight: 800;">600+</h3>
+            <h4 class="h6 mb-2">Members</h4>
+            <p class="small text-muted mb-0">Active student minds operating and learning collectively every day.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 fade-up-init">
+          <div class="glass-panel-glow p-4 text-center h-100">
+            <h3 class="h2 text-gradient mb-2" style="font-weight: 800;">6</h3>
+            <h4 class="h6 mb-2">Active Wings</h4>
+            <p class="small text-muted mb-0">Specialized subdivisions managing skills, labs, and research output.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. ANIMATED STATS BAR
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--bg-primary);">
+    <div class="container">
+      <div class="glass-panel p-5">
+        <div class="row g-4 align-items-center text-center">
+          <div class="col-6 col-lg-2-4 col-md-4">
+            <div class="stat-item">
+              <div class="stat-number" data-target="600+">0</div>
+              <div class="stat-label">Members</div>
+              <div class="stat-desc">Enrolled Talents</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2-4 col-md-4">
+            <div class="stat-item">
+              <div class="stat-number" data-target="100+">0</div>
+              <div class="stat-label">Events</div>
+              <div class="stat-desc">Executed Seminars & Contests</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2-4 col-md-4">
+            <div class="stat-item">
+              <div class="stat-number" data-target="50+">0</div>
+              <div class="stat-label">Achievements</div>
+              <div class="stat-desc">National & Global Wins</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2-4 col-md-6">
+            <div class="stat-item">
+              <div class="stat-number" data-target="6">0</div>
+              <div class="stat-label">Wings</div>
+              <div class="stat-desc">Functional Pillars</div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2-4 col-md-6">
+            <div class="stat-item">
+              <div class="stat-number" data-target="10">0</div>
+              <div class="stat-label">Years of Impact</div>
+              <div class="stat-desc">A decade of engineering legacy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. SEVEN WINGS SECTION
+       ========================================== -->
+  <section class="section-padding bg-secondary-custom" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container text-center">
+      <h2 class="section-headline">Our Active Wings</h2>
+      <p class="section-subtitle">Diverse technology domains fostering specialization, professional practice, and collaboration.</p>
+      
+      <div class="row g-4 text-start">
+        <!-- 1. CP -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="pucc-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="h4 mb-3">Competitive Programming</h3>
+            <p class="small text-secondary flex-grow-1">"Nurture problem-solving and prepare members for national and international contests."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> Coding contests & algorithm drills<br>
+              <strong>Gain:</strong> Strong data structures mastery
+            </div>
+          </div>
+        </div>
+        <!-- 2. SE -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="pucc-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="h4 mb-3">Software Engineering</h3>
+            <p class="small text-secondary flex-grow-1">"Equip members to design, develop, deploy modern, user-centric software to industry standards."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> Group projects, Hackathons<br>
+              <strong>Gain:</strong> Clean code, web/mobile production experience
+            </div>
+          </div>
+        </div>
+        <!-- 3. Networking -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="pucc-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3 class="h4 mb-3">Linux & Networking</h3>
+            <p class="small text-secondary flex-grow-1">"Build foundations in Linux, networking, and security for IT infrastructure innovation."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> Linux installation, routing setups<br>
+              <strong>Gain:</strong> Command-line mastery & cloud configuration
+            </div>
+          </div>
+        </div>
+        <!-- 4. Deep Neural -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="pucc-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v12M6 12h12"></path></svg>
+            </div>
+            <h3 class="h4 mb-3">Deep Neural Research</h3>
+            <p class="small text-secondary flex-grow-1">"Advance AI, ML, and deep learning through cutting-edge models and real-world use."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> Model building & computer vision labs<br>
+              <strong>Gain:</strong> TensorFlow/PyTorch neural architectures
+            </div>
+          </div>
+        </div>
+        <!-- 5. R&D -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="pucc-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="h4 mb-3">Research & Development</h3>
+            <p class="small text-secondary flex-grow-1">"Cultivate innovation and inquiry to solve real-world challenges with emerging tech."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> Paper reading, hardware prototyping<br>
+              <strong>Gain:</strong> Publication mindset & engineering creativity
+            </div>
+          </div>
+        </div>
+        <!-- 6. Career Guidance -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="pucc-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3 class="h4 mb-3">Career Guidance</h3>
+            <p class="small text-secondary flex-grow-1">"Empower members for higher studies and careers, bridging students and industry."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> CV reviews, mock job tests<br>
+              <strong>Gain:</strong> Alumni network mentorship, placement help
+            </div>
+          </div>
+        </div>
+        <!-- 7. IoT (Center/Bonus Grid) -->
+        <div class="col-md-6 col-lg-4 mx-auto fade-up-init">
+          <div class="pucc-card" style="border-color: var(--warm-coral);">
+            <div class="card-icon" style="color: var(--warm-coral); background: rgba(255, 139, 106, 0.1);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <h3 class="h4 mb-3">Internet of Things (IoT)</h3>
+            <p class="small text-secondary flex-grow-1">"Explore the Internet of Things ecosystem, connecting devices, data, and real-world systems through hands-on innovation."</p>
+            <hr class="my-3 opacity-10">
+            <div class="small">
+              <strong>Key Activity:</strong> Arduino, Raspberry Pi, sensor nodes<br>
+              <strong>Gain:</strong> Microcontrollers, telemetry systems expertise
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. EVENTS PREVIEW
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--bg-primary);">
+    <div class="container text-center">
+      <h2 class="section-headline">Events Preview</h2>
+      <p class="section-subtitle">Seminars, workshops, and intensive bootcamps helping members scale up.</p>
+      
+      <div class="row g-4 text-start">
+        <!-- Event 1 -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge upcoming">Upcoming</span>
+              <!-- Crisp SVG Illustration instead of broken images -->
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <circle cx="200" cy="100" r="60" stroke="#00BCD4" stroke-width="2" stroke-dasharray="10 5"/>
+                <path d="M170 100L190 120L230 80" stroke="#00BCD4" stroke-width="4" stroke-linecap="round"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">PUCC Intra Code Battle 2026</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 July 15, 2026</span>
+                <span>📍 CSE Lab 4</span>
+              </div>
+              <h3 class="event-title">PUCC Intra Code Battle 2026</h3>
+              <p class="small text-secondary flex-grow-1">Prepare yourself for the annual speed coding and algorithmic optimization showdown. Showcase your programming skills.</p>
+              <a href="events.html" class="btn-secondary-custom btn-sm mt-3">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 2 -->
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge upcoming">Upcoming</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <rect x="120" y="50" width="160" height="100" rx="10" stroke="#0EA5A4" stroke-width="2"/>
+                <path d="M140 80H260M140 100H220M140 120H200" stroke="#0EA5A4" stroke-width="4" stroke-linecap="round"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">AI and Deep Learning Bootcamp</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 August 02, 2026</span>
+                <span>📍 Seminar Library</span>
+              </div>
+              <h3 class="event-title">AI and Deep Learning Bootcamp</h3>
+              <p class="small text-secondary flex-grow-1">An intensive hands-on bootcamp focusing on convolutional neural networks and natural language models.</p>
+              <a href="events.html" class="btn-secondary-custom btn-sm mt-3">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Event 3 -->
+        <div class="col-md-6 col-lg-4 mx-auto fade-up-init">
+          <div class="event-card">
+            <div class="event-image-container">
+              <span class="event-badge">Recent</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="200" fill="#1E293B"/>
+                <circle cx="150" cy="100" r="30" stroke="#FF8B6A" stroke-width="2"/>
+                <circle cx="250" cy="100" r="30" stroke="#00BCD4" stroke-width="2"/>
+                <line x1="180" y1="100" x2="220" y2="100" stroke="#E2E8F0" stroke-width="2"/>
+                <text x="50%" y="170" dominant-baseline="middle" text-anchor="middle" fill="#94A3B8" font-family="'Sora', sans-serif" font-size="14">Linux System Administration Session</text>
+              </svg>
+            </div>
+            <div class="event-body">
+              <div class="event-meta">
+                <span>📅 June 12, 2026</span>
+                <span>📍 Server Hub Lab</span>
+              </div>
+              <h3 class="event-title">Linux System Administration Session</h3>
+              <p class="small text-secondary flex-grow-1">Practical workshop about operating system processes, network routing tables, and security scripts in Red Hat Linux.</p>
+              <a href="events.html" class="btn-secondary-custom btn-sm mt-3">View Summary</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-5">
+        <a href="events.html" class="btn-secondary-custom">View All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. ACHIEVEMENTS PREVIEW
+       ========================================== -->
+  <section class="section-padding bg-secondary-custom" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container text-center">
+      <h2 class="section-headline">Achievements Preview</h2>
+      <p class="section-subtitle">Challenging boundaries and bringing laurels to Chittagong and Bangladesh.</p>
+      
+      <div class="row g-4 text-start justify-content-center">
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="glass-panel p-4 h-100">
+            <span class="text-muted d-block mb-2 font-monospace">CONTESTS - 2025</span>
+            <h3 class="h5 mb-3">Top 10 at National Tech Fest</h3>
+            <p class="small text-secondary">PUCC Programming Team secured a historic position among 80 competing universities in the National Coding Championship.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="glass-panel p-4 h-100">
+            <span class="text-muted d-block mb-2 font-monospace">HACKATHONS - 2025</span>
+            <h3 class="h5 mb-3">Runners-Up: Smart Chittagong Hackathon</h3>
+            <p class="small text-secondary">Our R&D IoT team developed an automated real-time water logging monitoring network using LoRaWAN nodes.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 fade-up-init">
+          <div class="glass-panel p-4 h-100">
+            <span class="text-muted d-block mb-2 font-monospace">ACADEMICS - 2024</span>
+            <h3 class="h5 mb-3">2 Research Papers Published</h3>
+            <p class="small text-secondary">Our Deep Neural Research wing published computer vision architectures in peer-reviewed journals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <a href="achievements.html" class="btn-secondary-custom">View Full Trophy Wall</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. TESTIMONIALS (Glassmorphism Carousel)
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--bg-primary);">
+    <div class="container text-center">
+      <h2 class="section-headline">Voices of PUCC</h2>
+      <p class="section-subtitle">Hear from alumni, active students, and our distinguished faculty board.</p>
+      
+      <div class="position-relative" style="max-width: 800px; margin: 0 auto;">
+        <!-- Testimonial 1 -->
+        <div class="glass-panel testimonial-card testimonial-slide">
+          <p class="testimonial-text">"PUCC was the core catalyst of my coding path. The competitive programming camps gave me the analytical strength needed to pass Google's technical rounds."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="#00BCD4" opacity="0.2"/>
+                <circle cx="25" cy="20" r="8" fill="#00BCD4"/>
+                <path d="M12 40C12 33.3726 17.8203 30 25 30C32.1797 30 38 33.3726 38 40" fill="#00BCD4"/>
+              </svg>
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Tariqul Islam</div>
+              <div class="testimonial-role">Alumni (Batch 27) • Software Engineer, Google</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="glass-panel testimonial-card testimonial-slide" style="display: none;">
+          <p class="testimonial-text">"As a member of the Deep Neural wing, I collaborated on machine learning projects that was not covered in traditional syllabus. PUCC is truly a sandbox for builders."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="#0EA5A4" opacity="0.2"/>
+                <circle cx="25" cy="20" r="8" fill="#0EA5A4"/>
+                <path d="M12 40C12 33.3726 17.8203 30 25 30C32.1797 30 38 33.3726 38 40" fill="#0EA5A4"/>
+              </svg>
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Adiba Chowdhury</div>
+              <div class="testimonial-role">Active Student • CSE 4th Year Coordinator</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="glass-panel testimonial-card testimonial-slide" style="display: none;">
+          <p class="testimonial-text">"We focus on student agency and professional learning. Our mission is to produce global standard technology leaders right here from Premier University."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">
+              <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="#FF8B6A" opacity="0.2"/>
+                <circle cx="25" cy="20" r="8" fill="#FF8B6A"/>
+                <path d="M12 40C12 33.3726 17.8203 30 25 30C32.1797 30 38 33.3726 38 40" fill="#FF8B6A"/>
+              </svg>
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Professor Dr. CSE Dept</div>
+              <div class="testimonial-role">Chief Advisor, PUCC Faculty Member</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Navigation -->
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <button class="theme-toggle-btn carousel-btn-prev" aria-label="Previous slide">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+          <button class="theme-toggle-btn carousel-btn-next" aria-label="Next slide">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 19 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. FINAL CTA
+       ========================================== -->
+  <section class="section-padding bg-secondary-custom text-center" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); position: relative;">
+    <div class="tech-grid-bg"></div>
+    <div class="container position-relative" style="z-index: 10;">
+      <div class="glass-panel p-5 max-width-900 mx-auto" style="border-color: rgba(0, 188, 212, 0.25);">
+        <h2 class="h1 text-gradient mb-3" style="font-weight: 800;">Join Bangladesh's Future Technology Leaders</h2>
+        <p class="lead text-secondary mb-4 col-md-10 mx-auto">Get access to state-of-the-art tech bootcamps, programming challenges, and a community of innovation-driven engineers.</p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+          <a href="join.html" class="btn-primary-custom">Join Now</a>
+          <a href="contact.html" class="btn-secondary-custom">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 text-start">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-container" style="background: none; border: none; padding: 0; width: 36px; height: 36px;">
+              <img src="/assets/PUC-PNG.png" alt="Premier University Logo" width="40" height="40">
+            </div>
+            <div class="logo-container" style="background: none; border: none; padding: 0; width: 36px; height: 36px;">
+              <img src="/assets/puc_computer_club_logo_color.png" alt="PUCC Logo" width="60" height="20">
+            </div>
+            <h4 class="h5 mb-0" style="font-weight: 700;">PUCC</h4>
+          </div>
+          <p class="small text-muted mb-3">Challenging boundaries, reaching new heights.</p>
+          <p class="small text-muted">The official engineering and research computer community of Premier University, Chittagong, Bangladesh.</p>
+        </div>
+        <div class="col-6 col-lg-2 text-start ms-lg-auto">
+          <h5 class="h6 mb-3 font-monospace" style="letter-spacing: 0.05em; font-weight: 700;">NAVIGATE</h5>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="wings.html" class="footer-link">Wings</a>
+          <a href="events.html" class="footer-link">Events</a>
+        </div>
+        <div class="col-6 col-lg-2 text-start">
+          <h5 class="h6 mb-3 font-monospace" style="letter-spacing: 0.05em; font-weight: 700;">INFO</h5>
+          <a href="team.html" class="footer-link">Our Team</a>
+          <a href="join.html" class="footer-link">Join Us</a>
+          <a href="achievements.html" class="footer-link">Achievements</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="col-lg-3 text-start">
+          <h5 class="h6 mb-3 font-monospace" style="letter-spacing: 0.05em; font-weight: 700;">CONNECT</h5>
+          <p class="small text-muted mb-2">📍 CSE Department, Premier University, Chittagong, Bangladesh</p>
+          <p class="small text-muted mb-3">📧 contact@pucc.premier.edu</p>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 opacity-10">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start small text-muted">
+          &copy; 2026 Premier University Computer Club. All Rights Reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small text-muted mt-2 mt-md-0">
+          Built with 💻 by PUCC Dev Wing
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
